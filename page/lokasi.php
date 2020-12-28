@@ -15,7 +15,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="input-group mb-3">
-                        <input type="hidden" text="" name="laman" value="inventaris">
+                        <input type="hidden" text="" name="laman" value="lokasi">
                         <input type="text" class="form-control" placeholder="Cari ..." aria-describedby="button-addon2" name="s">
                         <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Cari</button>
                     </div>
