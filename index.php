@@ -22,10 +22,6 @@ if (isset($_SESSION['nama'])) {
 <body>
 
     <div class="container">
-        <!-- Content here -->
-        <?php if (isset($_POST['error'])) {
-            echo $_POST['error'];
-        } ?>
         <div class="row">
             <div class="col-md-4 offset-md-4">
                 <h2 class="text-center" style="margin-top: 50px;">Login</h2>
