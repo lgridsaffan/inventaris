@@ -26,10 +26,10 @@
                             <a class="nav-link <?= !isset($_GET['laman']) || $_GET['laman'] == "beranda" ? "active" : ""; ?>" aria-current="page" href="<?= base_url(); ?>/page/index.php?laman=beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= $_GET['laman'] == "inventaris" ? "active" : ""; ?>" href="<?= base_url(); ?>/page/index.php?laman=inventaris">Inventaris</a>
+                            <a class="nav-link <?= isset($_GET['laman']) && $_GET['laman'] == "inventaris" ? "active" : ""; ?>" href="<?= base_url(); ?>/page/index.php?laman=inventaris">Inventaris</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <?= $_GET['laman'] == "lokasi" ? "active" : ""; ?>" href="<?= base_url(); ?>/page/index.php?laman=lokasi">Lokasi</a>
+                            <a class="nav-link <?= isset($_GET['laman']) && $_GET['laman'] == "lokasi" ? "active" : ""; ?>" href="<?= base_url(); ?>/page/index.php?laman=lokasi">Lokasi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?= base_url(); ?>/logout.php">Logout</a>

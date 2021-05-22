@@ -22,28 +22,32 @@
                 </div>
             </div>
         </form>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Lokasi</th>
-                    <th scope="col">Penanggung Jawab</th>
-                    <th scope="col">Aksi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($arr as $data) : ?>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
                     <tr>
-                        <td><?= $i++; ?></td>
-                        <td><?= $data['nama_lokasi']; ?></td>
-                        <td><?= $data['penanggung_jawab']; ?></td>
-                        <td>
-                            <a href="<?= base_url(); ?>/page/index.php?laman=form_edit_lokasi&id=<?= $data['id_lokasi']; ?>" class="btn btn-info text-white">Edit</a>
-                            <a href="<?= base_url(); ?>/page/index.php?laman=hapus_lokasi&id=<?= $data['id_lokasi']; ?>" class="btn btn-danger">Hapus</a>
-                        </td>
+                        <th scope="col">#</th>
+                        <th scope="col">Lokasi</th>
+                        <th scope="col">Penanggung Jawab</th>
+                        <th scope="col">Aksi</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    <?php foreach ($arr as $data) : ?>
+                        <tr>
+                            <td><?= $i++; ?></td>
+                            <td><?= $data['nama_lokasi']; ?></td>
+                            <td><?= $data['penanggung_jawab']; ?></td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <a href="<?= base_url(); ?>/page/index.php?laman=form_edit_lokasi&id=<?= $data['id_lokasi']; ?>" class="btn btn-info text-white">Edit</a>
+                                    <a href="<?= base_url(); ?>/page/index.php?laman=hapus_lokasi&id=<?= $data['id_lokasi']; ?>" class="btn btn-danger">Hapus</a>
+                                </div>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
